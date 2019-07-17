@@ -99,3 +99,34 @@ class Welcome extends CI_Controller {
 	// trigger an error
 	print_r( $this->woo->orders->get( 0 ) );
 ```
+
+
+
+
+// Full Data for creation a product. 
+
+$data = array(
+    'product' => array(
+        'title' => 'Premium Quality',
+        'type' => 'simple',
+        'regular_price' => '21.99',
+        'description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
+        'short_description' => 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+        'categories' => array(
+            9,
+            14
+        ),
+        'images' => array(
+            array(
+                'src' => 'http =>//example.com/wp-content/uploads/2015/01/premium-quality-front.jpg',
+                'position' => 0
+            ),
+            array(
+                'src' => 'http =>//example.com/wp-content/uploads/2015/01/premium-quality-back.jpg',
+                'position' => 1
+            )
+        )
+    )
+);
+
+Topic: https://woocommerce.github.io/woocommerce-rest-api-docs/v2.html#create-a-product
