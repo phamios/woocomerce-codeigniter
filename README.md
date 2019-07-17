@@ -104,7 +104,7 @@ class Welcome extends CI_Controller {
 
 
 // Full Data for creation a product. 
-
+```
 $data = array(
     'product' => array(
         'title' => 'Premium Quality',
@@ -128,5 +128,6 @@ $data = array(
         )
     )
 );
+```
 
 Topic: https://woocommerce.github.io/woocommerce-rest-api-docs/v2.html#create-a-product
